@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="P2_AddTwoNumbers.cs" />
     <Compile Include="P1_TwoSum.cs" />
+    <Compile Include="P5_LongestPalindrome.cs" />
+    <Compile Include="P6_ZigZagConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
