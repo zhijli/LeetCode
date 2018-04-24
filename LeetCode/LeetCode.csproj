@@ -43,6 +43,7 @@
     <Compile Include="P11_ContainerWithMostWater.cs" />
     <Compile Include="P12_IntegerToRoman.cs" />
     <Compile Include="P13_RomanToInteger.cs" />
+    <Compile Include="P14_LongestCommonPrefix.cs" />
     <Compile Include="P2_AddTwoNumbers.cs" />
     <Compile Include="P1_TwoSum.cs" />
     <Compile Include="P3_LengthOfLongestSubstring.cs" />
