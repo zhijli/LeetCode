@@ -49,6 +49,7 @@
     <Compile Include="P19.cs" />
     <Compile Include="P20.cs" />
     <Compile Include="P21.cs" />
+    <Compile Include="P22.cs" />
     <Compile Include="P2_AddTwoNumbers.cs" />
     <Compile Include="P1_TwoSum.cs" />
     <Compile Include="P3_LengthOfLongestSubstring.cs" />
