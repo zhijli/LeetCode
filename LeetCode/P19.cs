@@ -11,14 +11,6 @@ namespace LeetCode
         public class Solution
         {
 
-            public class ListNode
-            {
-                public int val;
-                public ListNode next;
-                public ListNode(int x) { val = x; }
-            }
-
-
             public ListNode RemoveNthFromEnd(ListNode head, int n)
             {
                 if (head == null) return null;

@@ -1,13 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// -----------------------------------------------------------------------
+//  <copyright company="Microsoft">
+//      Copyright (c) Microsoft Corporation.  All rights reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace LeetCode
 {
-    public class P21
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    class P23
     {
+        public ListNode MergeKLists(ListNode[] lists)
+        {
+            if (lists == null || lists.Length == 0) return null;
+            var result = lists[0];
+            for (int i = 1; i < lists.Length; i++)
+            {
+                result = MergeTwoLists(result, lists[i]);
+            }
+
+            return result;
+        }
+
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             if (l1 == null)

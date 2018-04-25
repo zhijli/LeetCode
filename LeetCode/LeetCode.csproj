@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListNode.cs" />
     <Compile Include="P11_ContainerWithMostWater.cs" />
     <Compile Include="P12_IntegerToRoman.cs" />
     <Compile Include="P13_RomanToInteger.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="P20.cs" />
     <Compile Include="P21.cs" />
     <Compile Include="P22.cs" />
+    <Compile Include="P23.cs" />
     <Compile Include="P2_AddTwoNumbers.cs" />
     <Compile Include="P1_TwoSum.cs" />
     <Compile Include="P3_LengthOfLongestSubstring.cs" />
