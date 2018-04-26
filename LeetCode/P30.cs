@@ -8,9 +8,9 @@ namespace LeetCode
 {
     public class P30
     {
-        public IList<int> FindSubstring(string s, string[] words)
-        {
+        //public IList<int> FindSubstring(string s, string[] words)
+        //{
 
-        }
+        //}
     }
 }

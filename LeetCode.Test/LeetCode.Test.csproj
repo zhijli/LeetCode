@@ -59,6 +59,7 @@
     <Compile Include="P15_3SumTest.cs" />
     <Compile Include="P22_Test.cs" />
     <Compile Include="P29_Test.cs" />
+    <Compile Include="P4_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.csproj">
