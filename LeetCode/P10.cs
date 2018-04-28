@@ -17,66 +17,68 @@ namespace LeetCode
     {
         public bool IsMatch(string s, string p)
         {
-            char preChar = ' '; //' ' is not used in s
-            bool isMatch = false;
             int i = 0;
             int j = 0;
             while (i < s.Length && j < p.Length)
             {
-                if (p[j] == '.' || s[i] == p[j])
+                if (j + 1 < p.Length && p[j + 1] == '*')
                 {
-                    preChar = p[j];
-                    i++;
-                    j++;
-                }
-                else if (p[j] == '*')
-                {
-                    while (i < s.Length && (s[i] == preChar || preChar == '.'))
+                    if (j + 2 < p.Length)
                     {
-                        if (IsMatch(s.Substring(i - 1, s.Length - i + 1), p.Substring(j, p.Length - j + 1)))
+                        i--;
+                        do
                         {
-                            return true;
-                        }
-                        i++;
+                            i++;
+                            if (i < s.Length && IsMatch(s.Substring(i, s.Length - i), p.Substring(j + 2, p.Length - j - 2)))
+                            {
+                                return true;
+                            }
+                        } while (i < s.Length && (s[i] == p[j] || p[j] == '.'));
+                        j += 2;
                     }
+                    else
+                    {
+                        while (i < s.Length && (s[i] == p[j] || p[j] == '.'))
+                        {
+                            i++;
+                        }
+                        j += 2;
+                    }
+                }
+                else if (s[i] == p[j] || p[j] == '.')
+                {
+                    i++;
                     j++;
                 }
                 else
                 {
-                    if (j + 1 < p.Length && p[j + 1] == '*')
-                    {
-                        j += 2;
-                        preChar = ' ';
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
 
             if (i == s.Length)
             {
-                while (j < p.Length)
+                if (j == p.Length)
                 {
-                    if (j == '*')
+                    return true;
+                }
+                else
+                {
+                    if (p[j] == '*')
                     {
                         j++;
                     }
-                    else
+                    while (j < p.Length)
                     {
                         if (j + 1 < p.Length && p[j + 1] == '*')
                         {
                             j += 2;
                         }
-                        else
-                        {
-                            return false;
-                        }
+                        else { return false; }
                     }
+                    return true;
                 }
 
-                return true;
             }
             else
             {
@@ -85,3 +87,4 @@ namespace LeetCode
         }
     }
 }
+
