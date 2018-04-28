@@ -8,7 +8,7 @@ namespace LeetCode.Test
     {
         [TestMethod]
         public void TestMethod1()
-        {
+        {            
             var t = new P10();
             Assert.IsTrue(t.IsMatch("aa", "a*"));
             Assert.IsTrue(t.IsMatch("ab", ".*"));
@@ -19,6 +19,7 @@ namespace LeetCode.Test
             Assert.IsFalse(t.IsMatch("mississippi", "mis*is*p*."));
             Assert.IsTrue(t.IsMatch("bbbbba", ".*a*a"));
             Assert.IsTrue(t.IsMatch("a", "a*a"));
+            Assert.IsFalse(t.IsMatch("ab", ".*c"));            
 
         }
     }
