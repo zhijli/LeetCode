@@ -47,6 +47,7 @@
     <Compile Include="P13_RomanToInteger.cs" />
     <Compile Include="P14_LongestCommonPrefix.cs" />
     <Compile Include="P15_3Sum.cs" />
+    <Compile Include="P16.cs" />
     <Compile Include="P17.cs" />
     <Compile Include="P19.cs" />
     <Compile Include="P20.cs" />

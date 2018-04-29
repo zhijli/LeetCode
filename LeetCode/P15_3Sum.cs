@@ -35,7 +35,6 @@ namespace LeetCode
                 }
             }
 
-
             for (int i = 0; i < nums.Length - 1; i++)
             {
                 if (i >= 1 && nums[i] == nums[i - 1]) continue;
