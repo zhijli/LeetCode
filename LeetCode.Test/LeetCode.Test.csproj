@@ -64,6 +64,7 @@
     <Compile Include="P8_Test.cs" />
     <Compile Include="P10_Test.cs" />
     <Compile Include="P36_Test.cs" />
+    <Compile Include="P39_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.csproj">
