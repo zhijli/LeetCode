@@ -65,6 +65,7 @@
     <Compile Include="P1_TwoSum.cs" />
     <Compile Include="P32.cs" />
     <Compile Include="P33.cs" />
+    <Compile Include="P36.cs" />
     <Compile Include="P38.cs" />
     <Compile Include="P3_LengthOfLongestSubstring.cs" />
     <Compile Include="P4.cs" />
