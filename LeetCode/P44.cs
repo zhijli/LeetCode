@@ -23,7 +23,7 @@ namespace LeetCode
                 for (int i = v2; i < p.Length; i++)
                 {
                     if (p[i] != '*')
-                    {
+                    {   
                         return false;
                     }
                 }
