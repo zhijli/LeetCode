@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,52 +9,35 @@ namespace LeetCode
 {
     public class P39
     {
+        static List<IList<int>>[,] dp;
+
         public IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
-            Array.Sort(candidates);
+            dp = new List<IList<int>>[candidates.Length, target + 1];
+            return CombinationSum(candidates, candidates.Length - 1, target);
+        }
 
-            List<IList<int>>[,] dp = new List<IList<int>>[candidates.Length, target + 1];
-            for (int i = 0; i < candidates.Length; i++)
-            {
-                dp[i, 0] = new List<IList<int>>();
-            }
+        private List<IList<int>> CombinationSum(int[] candidates, int index, int target)
+        {
+            if (target == 0) return new List<IList<int>> { new List<int>() };
+            if (dp[index, target] != null) return dp[index, target];
 
-            for (int val = 0; val <= target; val++)
+            var results = new List<IList<int>>();
+            for (int i = 0; i <= index; i++)
             {
-                for (int i = 0; i < candidates.Length; i++)
+                if (target >= candidates[i])
                 {
-                    for (int k = 0; k <= i; k++)
-                    {
-                        if (val >= candidates[k])
+                    CombinationSum(candidates, i, target - candidates[i]).ForEach(
+                        item =>
                         {
-                            if (dp[k, val - candidates[k]] != null)
-                            {
-                                //Need Deep copy for each list
-                                var list = new List<List<int>>();
-                                dp[k, val - candidates[k]].ForEach(result => list.Add(new List<int>(result)));
-
-                                list.ForEach(result => result.Add(candidates[k]));
-                                if (list.Count == 0)
-                                {
-                                    list.Add(new List<int> { candidates[k] });
-                                }
-
-                                if (dp[i, val] == null)
-                                {
-                                    dp[i, val] = new List<IList<int>>();
-                                }
-                                dp[i, val].AddRange(list);
-                            }
-                        }
-                    }
+                            //Need Deep copy for each list
+                            results.Add(new List<int>(item) { candidates[i] });
+                        });
                 }
             }
 
-            if (dp[candidates.Length - 1, target] == null)
-            {
-                return new List<IList<int>>();
-            }
-            return dp[candidates.Length - 1, target];
+            dp[index, target] = results;
+            return results;
         }
     }
 }
