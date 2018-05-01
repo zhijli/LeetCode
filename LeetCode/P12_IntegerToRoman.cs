@@ -19,7 +19,6 @@ namespace LeetCode
         {
             var romanChar = "IVXLCDMNN";
             var result = new StringBuilder();
-            int i = 0;
             int j = 0;
             int k = 0;
             while (num > 0)

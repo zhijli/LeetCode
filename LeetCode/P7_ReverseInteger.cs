@@ -34,7 +34,7 @@ namespace LeetCode
                 {
                     checked { result = result * 10 + i; }
                 }
-                catch (OverflowException e)
+                catch (OverflowException)
                 {
                     return 0;
                 }

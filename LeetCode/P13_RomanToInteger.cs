@@ -22,10 +22,7 @@ namespace LeetCode
             };
 
             var result = 0;
-
             int current = 0;
-            int next = 0;
-
             while (current < s.Length)
             {
                 var value = dic[s[current]];
