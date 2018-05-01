@@ -100,6 +100,7 @@
     <Compile Include="P60.cs" />
     <Compile Include="P61.cs" />
     <Compile Include="P62.cs" />
+    <Compile Include="P63.cs" />
     <Compile Include="P6_ZigZagConversion.cs" />
     <Compile Include="P7_ReverseInteger.cs" />
     <Compile Include="P8.cs" />
