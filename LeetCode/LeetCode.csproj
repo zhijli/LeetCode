@@ -84,6 +84,7 @@
     <Compile Include="P46.cs" />
     <Compile Include="P47.cs" />
     <Compile Include="P48.cs" />
+    <Compile Include="P49.cs" />
     <Compile Include="P5_LongestPalindrome.cs" />
     <Compile Include="P6_ZigZagConversion.cs" />
     <Compile Include="P7_ReverseInteger.cs" />
