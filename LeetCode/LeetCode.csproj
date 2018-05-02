@@ -114,6 +114,8 @@
     <Compile Include="P73.cs" />
     <Compile Include="P76.cs" />
     <Compile Include="P77.cs" />
+    <Compile Include="P78.cs" />
+    <Compile Include="P79.cs" />
     <Compile Include="P7_ReverseInteger.cs" />
     <Compile Include="P8.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
