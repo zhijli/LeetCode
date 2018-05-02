@@ -105,6 +105,7 @@
     <Compile Include="P66.cs" />
     <Compile Include="P67.cs" />
     <Compile Include="P68.cs" />
+    <Compile Include="P69.cs" />
     <Compile Include="P6_ZigZagConversion.cs" />
     <Compile Include="P72.cs" />
     <Compile Include="P7_ReverseInteger.cs" />
