@@ -16,26 +16,21 @@ namespace LeetCode
 
             int i = 0, j = 0;
             int min = int.MaxValue;
-            int minLeft=0;
-            int minRight=-1;
-            int?[] dic = new int?[128];
+            int minLeft = 0;
+            int minRight = -1;
+            //Imporve: No need to use int?, just think required count is 0 for thos char not in t 
+            int[] dic = new int[128];
 
             foreach (char c in t)
             {
-                if (dic[c] == null)
-                {
-                    dic[c] = 1;
-                }
-                else
-                {
-                    dic[c]++;
-                }
+                dic[c]++;
             }
 
             var containCount = t.Length;
-            if (dic[s[0]] != null)
+
+            dic[s[0]]--;
+            if (dic[s[0]] >= 0)
             {
-                dic[s[0]]--;
                 containCount--;
             }
 
@@ -44,7 +39,7 @@ namespace LeetCode
                 if (containCount > 0)
                 {
                     j++;
-                    if (j < s.Length && dic[s[j]] != null)
+                    if (j < s.Length)
                     {
                         dic[s[j]]--;
                         if (dic[s[j]] >= 0)
@@ -61,7 +56,7 @@ namespace LeetCode
                         minLeft = i;
                         minRight = j;
                     }
-                    if (i < s.Length && dic[s[i]] != null)
+                    if (i < s.Length)
                     {
                         dic[s[i]]++;
                         if (dic[s[i]] > 0)
@@ -73,7 +68,7 @@ namespace LeetCode
                 }
             }
 
-            return s.Substring(minLeft, minRight -minLeft +1);
+            return s.Substring(minLeft, minRight - minLeft + 1);
         }
     }
 }
