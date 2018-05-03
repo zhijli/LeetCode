@@ -112,14 +112,16 @@
     <Compile Include="P71.cs" />
     <Compile Include="P72.cs" />
     <Compile Include="P73.cs" />
-    <Compile Include="P75.cs" />
+<<<<<<< HEAD
     <Compile Include="P76.cs" />
     <Compile Include="P77.cs" />
     <Compile Include="P78.cs" />
     <Compile Include="P79.cs" />
+=======
+    <Compile Include="P75.cs" />
+>>>>>>> P75
     <Compile Include="P7_ReverseInteger.cs" />
     <Compile Include="P8.cs" />
-    <Compile Include="P80.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
