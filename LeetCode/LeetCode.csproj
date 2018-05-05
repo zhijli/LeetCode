@@ -121,6 +121,7 @@
     <Compile Include="P8.cs" />
     <Compile Include="P80.cs" />
     <Compile Include="P81.cs" />
+    <Compile Include="P82.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
