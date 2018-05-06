@@ -126,6 +126,7 @@
     <Compile Include="P84.cs" />
     <Compile Include="P85.cs" />
     <Compile Include="P86.cs" />
+    <Compile Include="P88.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
