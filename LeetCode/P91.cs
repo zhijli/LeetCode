@@ -8,9 +8,13 @@ namespace LeetCode
 {
     public class P91
     {
+        private int?[] dp;
+
         public int NumDecodings(string s)
         {
             if (string.IsNullOrEmpty(s)) return 0;
+
+            dp = new int?[s.Length];
             return NumDecodings(s, 0);
         }
 
@@ -23,16 +27,34 @@ namespace LeetCode
                 return 1;
             }
 
-            if (s[index] == '0') return 0;
-            if (s[index] == '1') return NumDecodings(s, index + 1) + NumDecodings(s, index + 2);
+            if (dp[index] != null) return dp[index].Value;
+
+
+            if (s[index] == '0')
+            {
+                dp[index] = 0;
+                return dp[index].Value;
+            }
+            if (s[index] == '1')
+            {
+                dp[index] = NumDecodings(s, index + 1) + NumDecodings(s, index + 2);
+                return dp[index].Value;
+            }
             if (s[index] == '2')
             {
-                if (s[index + 1] - '0' <= 6) return NumDecodings(s, index + 1) + NumDecodings(s, index + 2);
-                return NumDecodings(s, index + 1);
+                if (s[index + 1] - '0' <= 6)
+                {
+                    dp[index] = NumDecodings(s, index + 1) + NumDecodings(s, index + 2);
+                    return dp[index].Value;
+                }
+
+                dp[index] = NumDecodings(s, index + 1);
+                return dp[index].Value;
             }
             else
             {
-                return NumDecodings(s, index + 1);
+                dp[index] = NumDecodings(s, index + 1);
+                return dp[index].Value;
             }
         }
     }
