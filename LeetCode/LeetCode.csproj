@@ -130,6 +130,7 @@
     <Compile Include="P89.cs" />
     <Compile Include="P90.cs" />
     <Compile Include="P91.cs" />
+    <Compile Include="P92.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
