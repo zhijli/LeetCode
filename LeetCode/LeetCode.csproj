@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="P100.cs" />
     <Compile Include="P74.cs" />
     <Compile Include="Model\Interval.cs" />
     <Compile Include="Model\ListNode.cs" />
