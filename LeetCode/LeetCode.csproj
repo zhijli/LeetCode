@@ -136,6 +136,7 @@
     <Compile Include="P94.cs" />
     <Compile Include="P95.cs" />
     <Compile Include="P96.cs" />
+    <Compile Include="P97.cs" />
     <Compile Include="P98.cs" />
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
