@@ -44,6 +44,7 @@
     <Compile Include="P101.cs" />
     <Compile Include="P102.cs" />
     <Compile Include="P103.cs" />
+    <Compile Include="P104.cs" />
     <Compile Include="P74.cs" />
     <Compile Include="Model\Interval.cs" />
     <Compile Include="Model\ListNode.cs" />
