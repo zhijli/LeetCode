@@ -56,6 +56,8 @@
     <Compile Include="P113.cs" />
     <Compile Include="P114.cs" />
     <Compile Include="P115.cs" />
+    <Compile Include="P116.cs" />
+    <Compile Include="P118.cs" />
     <Compile Include="P74.cs" />
     <Compile Include="Model\Interval.cs" />
     <Compile Include="Model\ListNode.cs" />
@@ -158,6 +160,7 @@
     <Compile Include="P9_PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\TreeNode.cs" />
+    <Compile Include="Model\TreeLinkNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
