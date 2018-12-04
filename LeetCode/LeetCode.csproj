@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\RandomListNode.cs" />
     <Compile Include="Model\UndirectedGraphNode.cs" />
     <Compile Include="P100.cs" />
     <Compile Include="P101.cs" />
@@ -72,6 +73,8 @@
     <Compile Include="P132.cs" />
     <Compile Include="P133.cs" />
     <Compile Include="P134.cs" />
+    <Compile Include="P138.cs" />
+    <Compile Include="P137.cs" />
     <Compile Include="P136.cs" />
     <Compile Include="P135.cs" />
     <Compile Include="P74.cs" />
