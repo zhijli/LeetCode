@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\RandomListNode.cs" />
+    <Compile Include="Model\TrieNode.cs" />
     <Compile Include="Model\UndirectedGraphNode.cs" />
     <Compile Include="P100.cs" />
     <Compile Include="P101.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="P137.cs" />
     <Compile Include="P136.cs" />
     <Compile Include="P135.cs" />
+    <Compile Include="P139.cs" />
     <Compile Include="P74.cs" />
     <Compile Include="Model\Interval.cs" />
     <Compile Include="Model\ListNode.cs" />

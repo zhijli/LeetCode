@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="P139_Test.cs" />
     <Compile Include="P1_TwoSumTest.cs" />
     <Compile Include="P37_Test.cs" />
     <Compile Include="P137_Test.cs" />
